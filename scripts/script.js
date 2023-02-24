@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
     if (position == 0) {
       clearInterval(intervalId);
       setTimeout(function () {
-        floatingDiv.style.display = "none";
+        
       }, 2000);
     } else {
       position += 5;
@@ -26,7 +26,4 @@ window.addEventListener("load", function () {
   }
 });
 
-setTimeout(function () {
-  var carouselDiv = document.getElementById("carouselExampleCaptions");
-  carouselDiv.style.opacity = "1";
-}, 3000);
+
