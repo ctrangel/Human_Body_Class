@@ -26,4 +26,9 @@ window.addEventListener("load", function () {
   }
 });
 
+function closeNotification() {
+  var callout = document.getElementById("callout");
+  callout.style.display = 'none';
+
+}
 

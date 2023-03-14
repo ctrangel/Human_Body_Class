@@ -1,48 +1,76 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 body {
-    background-image: url(../media/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   
+  background-image: url(../media/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .navbar {
-    height: 80px;
-    background-color: #ffdca7;
-    box-shadow: 0 4px 6px rgba(0,0,0,.1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-  }
+  height: 80px;
+  background-color: #ffdca7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px;
-    max-width: 1300px;
-    margin: auto;
-    border: solid #ffdca7;
-    border-width: 10px 5px 10px 5px;
-    border-radius: 10px;
-    background-color: #e2cdad;
-    box-shadow: 10px 4px 6px rgba(0,0,0,.1);
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: 200px;
-    transition: all 2s ease-out;
-    
-
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  max-width: 1300px;
+  margin: auto;
+  border: solid #ffdca7;
+  border-width: 10px 5px 10px 5px;
+  border-radius: 10px;
+  background-color: #e2cdad;
+  box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 200px;
+  transition: all 2s ease-out;
 }
 
+.callout {
+  margin-top: 100px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e2cdad;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  max-width: 400px;
+  z-index: 9999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.callout p {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.callout button.close {
+  position: absolute;
+  top: -11px;
+  right: -3px;
+  font-size: 29px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.callout button.close:hover {
+  color: #ff0000;
+}
