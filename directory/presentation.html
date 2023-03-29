@@ -19,7 +19,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <script src="../scripts/script.js"></script>
+  <script src="/scripts/presentation.js"></script>
   <nav class="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="/directory/presentation.html">Presentation</a>
@@ -61,7 +61,7 @@
   <div id="container">
 
 
-    <div class="section">
+    <div id="intro" class="section">
       <h2>Hearing: An introduction</h2>
       <div class="circle">
         <img src="/media/hearing1.jpg" alt="Hearing Image 1">
@@ -126,7 +126,7 @@
 
     <div id="what-sound-waves" class="section">
       <h2>What are sound waves? What makes sound? What is that noise? What is that melody?? </h2>
-      <img src="hearing3.jpg" alt="Hearing Image 3">
+      <img id="sound-wave-img" src="/media/hearing3.jpg" alt="Hearing Image 3">
       <p>Sound is produced when an object vibrates. This creates a ‘pressure wave’. A wave is essentially just energy
         flowing through a medium. In this case, the medium would be the air hence why you wouldn’t be able to hear in
         space. However, sound can travel through any medium, like water. Just not as easily. In a lot of ways, sound
@@ -166,7 +166,7 @@
 
     <div id="what-do-we-hear" class="section">
       <h2>What are we hearing right now?</h2>
-      <img src="hearing4.jpg" alt="Hearing Image 4">
+      <img src="/media/hearing4.jpg" alt="Hearing Image 4">
       <p>The frequency of a sound wave is measured in Hz. The Human ear can pick up frequencies from about 20 Hz to
         about 20 kHz, or 20,000 Hz. Interestingly, most people become less sensitive to high frequencies over time, so
         the average limit for adults is more so 15 kHz to 17 kHz. The sounds that we cannot hear have names for those
@@ -178,24 +178,68 @@
 
     <div id="which-one" class="section">
       <h2>What frequencies do we find most pleasant? White, pink, or brown noise?</h2>
-      <img src="hearing5.jpg" alt="Hearing Image 5">
+      <img src="/media/hearing5.jpg" alt="Hearing Image 5">
       <p>White noise is technically a noise that contains all frequencies across the entire sound spectrum that we can
         observe. It kind of sounds more like the ocean, wind, or tv static. I found that the difference between the
         three sounds mostly had to do with the amplitude of different ends of the spectrum. For example, pink noise has
         louder low-end frequencies and softer hi-end. Brown is pretty much just an exaggerated pink with an even lower
-        low-end that sounds more like a rumble. Kind of like the sound you hear when you’re in an airplane.
+        low-end that sounds more like a rumble. Kind of like the sound you hear when you’re in an airplane. People often
+        use fans and other things similar to that to produce sustained white noise.
 
         Research has shown that exposure to this sustained mashup of frequencies can be beneficial to our well-being in
-        a few different ways, like improving sleep, reducing crying babies, and improving focus.
+        a few different ways, like improving sleep, reducing crying babies, and improving focus.<a
+          href="#summary">Summary</a>
       </p>
+      <table id="noises">
+        <tr>
+          <button id="white" onclick="whiteNoise()">White Noise</button>
+        </tr>
+        <tr>
+          <button id="pink" onclick="pinkNoise()">Pink Noise</button>
+        </tr>
+        <tr>
+          <button id="brown" onclick="brownNoise()">Brown Noise</button>
+        </tr>
+      </table>
     </div>
     <div id="summary" class="section">
       <h2>Summary</h2>
-      <p>Summary of the presentation</p>
+      <p>Hearing plays a big role in survival and quality of life<br>
+        Soundwaves are funneled into the ear canal and are processed and transmitted to the brain.<br>
+        Sound waves are created from vibrations; they’re what make noise.<br>
+        The Human ear can pick up frequencies from about 20 Hz to about 20 kHz, or 20,000 Hz.<br>
+        I like pink noise the best. Although there is a ton of different ways you can use different frequencies to
+        benefit your physical and mental health.
+        <br>
+        <a href="https://www.neilsperlingmd.com/blog/2016/09/interesting-facts-about-the-human-ear/">Here's some more interesting ear facts </a><br>"
+        
+        
+      </p>
+      <a  href="#references">also, works cited</a>
     </div>
-
+    <div id="references" class="section">
+      <h2>Works cited</h2>
+      <ul>
+        <li>
+          <p>The Audible Spectrum - Neuroscience - NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK10924/. </p>
+        </li>
+        <li>
+          <p>Bennett, Hayley. “What Are White, Pink and Brown Noise?” What Is Brown Noise? | BBC Science Focus Magazine, BBC Science Focus Magazine, 25 Feb. 2023, https://www.sciencefocus.com/science/what-is-brown-noise/. </p>
+        </li>
+        <li>
+          <p>Danas@soundst.com. “Interesting Facts about the Human Ear: New York City Ear Surgeon.” Neil Sperling, MD, 23 Feb. 2019, https://www.neilsperlingmd.com/blog/2016/09/interesting-facts-about-the-human-ear/. </p>
+        </li>
+        <li>
+          <p>“How the Ear Works.” How the Ear Works | Johns Hopkins Medicine, https://www.hopkinsmedicine.org/health/conditions-and-diseases/how-the-ear-works. </p>
+        </li>
+        <li>
+          <p>“Sound Waves.” PASCO Scientific, https://www.pasco.com/products/sound-waves</p>
+        </li>
+      </ul>
+      
+    </div>
     <div class="footer">
-      <p>Christian Rangel</p>
+      <p><a href="#intro">Christian Rangel</a></p>
     </div>
   </div>
 

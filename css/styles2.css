@@ -58,8 +58,11 @@ body {
 .section img {
   float: left;
   margin-right: 60px;
-
+  margin-bottom: 19px;
+  width: 400px;
+  height: 400px;
   max-width: 100%;
+  box-shadow: #333 -12px 20px 20px 6px;
 }
 
 .section blockquote {
@@ -95,7 +98,58 @@ body {
   padding: 20px;
   text-align: center;
 }
+.footer a {
+  color: #2de6ec;
+  text-decoration: none;
+}
 
+#white {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border: solid 1px cyan;
+  border-radius: 10px;
+  margin: 15px;
+  width: 100%;
+}
+
+#pink {
+  background-color: #ffbcff;
+  padding: 20px;
+  text-align: center;
+  border: solid 1px cyan;
+  border-radius: 10px;
+  margin: 15px;
+  width: 100%;
+}
+
+#brown {
+  background-color: rgb(194, 147, 147);
+  padding: 20px;
+  text-align: center;
+  border: solid 1px cyan;
+  border-radius: 10px;
+  margin: 15px;
+  width: 100%;
+}
+
+#references ul li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+#sound-wave-img {
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+#sound-wave-img:hover {
+  scale: 2.5;
+
+
+
+}
 /* .circle:hover {
   position: fixed;
   bottom: -200px;
@@ -107,8 +161,8 @@ body {
   background: radial-gradient(circle, transparent 50%, #2de6ec 0);
   animation: wave 2s ease-out forwards;
 }
-
-@keyframes wave {
+*/
+/* @keyframes wave {
   0% {
     transform: scale(0);
     opacity: 1;
@@ -117,7 +171,7 @@ body {
     transform: scale(10);
     opacity: 0;
   }
-} */
+}  */
 
 
 @media only screen and (max-width: 1440px) {
