@@ -5,7 +5,6 @@
   font-family: "Fira Sans", sans-serif;
 }
 body {
-  background-image: url(../media/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,62 +22,6 @@ body {
 
 .nav-link {
   color: cyan !important;
-}
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  padding: 0 20px;
-  max-width: 1300px;
-  margin: auto;
-  border: solid #ffdca7;
-  border-width: 10px 5px 10px 5px;
-  border-radius: 10px;
-  background-color: #e2cdad;
-  box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  height: 200px;
-  transition: all 2s ease-out;
-}
-
-.callout {
-  margin-top: 100px;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #e2cdad;
-  border: 1px solid #d3d3d3;
-  padding: 10px;
-  max-width: 400px;
-  z-index: 9999;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.callout p {
-  font-size: 25px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.callout button.close {
-  position: absolute;
-  top: -11px;
-  right: -3px;
-  font-size: 29px;
-  font-weight: bold;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.callout button.close:hover {
-  color: #ff0000;
 }
 
 #container {
@@ -125,19 +68,106 @@ body {
 
   max-width: 100%;
 }
-.section p {
+.section p, .txt-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin-bottom: 1px;
   max-width: 100%;
-  line-height: 30px;
+  line-height: 38px;
+  font-size: 20px;
+  word-wrap: break-word;
+  
 }
 
+.section a {
+  color: #2de6ec;
+  text-decoration: none;
+}
+
+.section ul {
+  font-size: 1.5rem;
+}
 .footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+/* .circle:hover {
+  position: fixed;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, transparent 50%, #2de6ec 0);
+  animation: wave 2s ease-out forwards;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+  }
+} */
+
+
+@media only screen and (max-width: 1440px) {
+/* CSS rules for screen sizes under 1440px */
+.section {
+margin: 0 0 0 50px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+/* CSS rules for screen sizes under 1024px */
+.navbar {
+height: 60px;
+}
+
+#container {
+padding: 50px;
+}
+
+.section {
+height: 600px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+/* CSS rules for screen sizes under 768px */
+.navbar {
+height: 50px;
+}
+
+#container {
+padding: 30px;
+}
+
+.section {
+height: 500px;
+}
+}
+
+@media only screen and (max-width: 425px) {
+/* CSS rules for screen sizes under 425px */
+.navbar {
+height: 40px;
+}
+
+#container {
+padding: 20px;
+}
+
+.section {
+height: 400px;
+}
 }

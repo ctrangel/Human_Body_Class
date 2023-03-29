@@ -1,13 +1,4 @@
-function openLink(link) {
-  window.open(link, "_blank");
-}
 
-window.addEventListener("scroll", function () {
-  var navbar = document.querySelector(".navbar");
-  var distanceFromTop = navbar.getBoundingClientRect().top;
-  var waveValue = Math.sin(distanceFromTop / 100) * 10;
-  navbar.style.transform = "translateY(" + waveValue + "px)";
-});
 
 window.addEventListener("load", function () {
   var floatingDiv = document.getElementById("header");
@@ -32,3 +23,20 @@ function closeNotification() {
 
 }
 
+
+$(document).ready(function() {
+  $('a[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+
+    let target = this.hash;
+    let $target = $(target);
+
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 900, 'swing', function () {
+      window.location.hash = target;
+
+    });
+    console.log("function called");
+  });
+});
