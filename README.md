@@ -1,6 +1,7 @@
 ## Human Body Class !!!!!!!!
 
-I made a lil site for my bio class cause I was bored 
+I made a lil site for my bio class 
+
 
 www.humanbodyclass.com 
 
