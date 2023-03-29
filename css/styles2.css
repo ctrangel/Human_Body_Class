@@ -47,6 +47,9 @@
 .section h2 {
   margin-top: 0;
   text-align: center;
+  border-bottom: solid 1px cyan;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .section img {
@@ -229,7 +232,6 @@
     border-bottom: solid 1px cyan;
     padding-bottom: 10px;
     margin-bottom: 50px;
-
   }
 
   .section p {
@@ -250,19 +252,19 @@
     padding: 0;
     background-color: #ffffff;
   }
-  
+
   .header {
     background-color: #ffffff;
     color: #bef5ff;
     padding: 85px;
     text-align: center;
   }
-  
+
   .header h1 {
     margin: 0;
     font-weight: 500;
   }
-  
+
   .section {
     margin: 0 200px 0 200px;
     margin-bottom: 50px;
@@ -272,7 +274,7 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .section h2 {
     margin-top: 0;
     text-align: center;
@@ -280,7 +282,7 @@
     padding-bottom: 10px;
     margin-bottom: 50px;
   }
-  
+
   .section img {
     float: none;
     margin-right: 0;
@@ -296,7 +298,7 @@
     max-width: 100%;
     clear: both;
   }
-  
+
   .section p,
   .txt-container {
     display: flex;
@@ -309,16 +311,15 @@
     font-size: 20px;
     word-wrap: break-word;
   }
-  
+
   .section a {
     color: #2de6ec;
     text-decoration: none;
   }
-  
+
   .section ul {
     font-size: 1.5rem;
   }
-  
 }
 
 /* desktop screen 1440px */
@@ -339,42 +340,42 @@
     z-index: 9999;
     border-bottom: solid 1px cyan;
   }
-  
+
   .nav-link {
     color: cyan !important;
   }
-  
+
   #container {
     display: block;
     margin: 0 auto;
     padding: 0;
     background-color: #ffffff;
   }
-  
+
   .header {
     background-color: #ffffff;
     color: #bef5ff;
     padding: 85px;
     text-align: center;
   }
-  
+
   .header h1 {
     margin: 0;
     font-weight: 500;
   }
-  
+
   .section {
     margin: 0 200px 0 200px;
     margin-bottom: 50px;
     height: 1500px;
     border-bottom: solid 1px cyan;
   }
-  
+
   .section h2 {
     margin-top: 0;
     text-align: center;
   }
-  
+
   .section img {
     float: none;
     margin-right: 0;
@@ -402,12 +403,12 @@
     font-size: 20px;
     word-wrap: break-word;
   }
-  
+
   .section a {
     color: #2de6ec;
     text-decoration: none;
   }
-  
+
   .section ul {
     font-size: 1.5rem;
   }
@@ -421,7 +422,7 @@
     color: #2de6ec;
     text-decoration: none;
   }
-  
+
   #white {
     background-color: #ffffff;
     padding: 20px;
@@ -431,7 +432,7 @@
     margin: 15px;
     width: 100%;
   }
-  
+
   #pink {
     background-color: #ffbcff;
     padding: 20px;
@@ -441,7 +442,7 @@
     margin: 15px;
     width: 100%;
   }
-  
+
   #brown {
     background-color: rgb(194, 147, 147);
     padding: 20px;
@@ -451,7 +452,7 @@
     margin: 15px;
     width: 100%;
   }
-  
+
   #references ul li {
     list-style-type: none;
     margin: 0;
@@ -462,12 +463,11 @@
     overflow: hidden;
     transition: 1s ease;
   }
-  
+
   #sound-wave-img:hover {
     scale: 2.5;
   }
 }
-
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   * {
@@ -476,7 +476,7 @@
     box-sizing: border-box;
     font-family: "Fira Sans", sans-serif;
   }
-  
+
   .navbar {
     height: 80px;
     background-color: #ffffff;
@@ -486,41 +486,41 @@
     z-index: 9999;
     border-bottom: solid 1px cyan;
   }
-  
+
   .navbar {
     width: 100%;
   }
-  
+
   .nav-link {
     color: cyan !important;
   }
-  
+
   #container {
     display: block;
     margin: 0 auto;
     padding: 100px;
     background-color: #ffffff;
   }
-  
+
   .header {
     background-color: #ffffff;
     color: #bef5ff;
     padding: 20px;
     text-align: center;
   }
-  
+
   .header h1 {
     margin: 0;
     font-weight: 500;
   }
-  
+
   .section {
     margin: 0 100px 0 100px;
     margin-bottom: 50px;
     height: 2000px;
     border-bottom: solid 1px cyan;
   }
-  
+
   .section h2 {
     margin-top: 0;
     text-align: center;
@@ -528,7 +528,7 @@
     padding-bottom: 10px;
     margin-bottom: 50px;
   }
-  
+
   .section img {
     float: none;
     margin-right: 0;
@@ -544,7 +544,7 @@
     max-width: 100%;
     clear: both;
   }
-  
+
   .section p,
   .txt-container {
     display: flex;
@@ -557,16 +557,16 @@
     font-size: 18px;
     word-wrap: break-word;
   }
-  
+
   .section a {
     color: #2de6ec;
     text-decoration: none;
   }
-  
+
   .section ul {
     font-size: 1.5rem;
   }
-  
+
   #white,
   #pink,
   #brown {
